@@ -19,6 +19,10 @@
     "url": "https://github.com/sitepack/sitepack-dev-server/issues"
   },
   "homepage": "https://github.com/sitepack/sitepack-dev-server#readme",
+  "peerDependencies": {
+    "express": "^4.13.3",
+    "webpack": "^1.12.2"
+  },
   "dependencies": {
     "proxy-middleware": "^0.15.0",
     "webpack-dev-server": "^1.12.1"
