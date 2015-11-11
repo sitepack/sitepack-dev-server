@@ -1,0 +1,26 @@
+{
+  "name": "@sitepack/dev-server",
+  "version": "0.1.0",
+  "description": "Development server for sitepack apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitepack/sitepack-dev-server.git"
+  },
+  "keywords": [
+    "sitepack"
+  ],
+  "author": "Jas Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sitepack/sitepack-dev-server/issues"
+  },
+  "homepage": "https://github.com/sitepack/sitepack-dev-server#readme",
+  "dependencies": {
+    "proxy-middleware": "^0.15.0",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
