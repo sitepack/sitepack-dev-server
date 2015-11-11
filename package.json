@@ -1,6 +1,6 @@
 {
   "name": "@sitepack/dev-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Development server for sitepack apps.",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/sitepack/sitepack-dev-server#readme",
   "peerDependencies": {
-    "express": "^4.13.3",
     "webpack": "^1.12.2"
   },
   "dependencies": {
+    "express": "^4.13.3",
     "proxy-middleware": "^0.15.0",
     "webpack-dev-server": "^1.12.1"
   }
