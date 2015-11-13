@@ -31,8 +31,7 @@ app.get('/*', function response(req, res, next) {
 
     var html = renderHtml(
       title,
-      `<script src="/${assets}/layout.js"></script>
-      <script src="/${assets}/main.js"></script>`
+      `<script src="/${assets}/layout.js"></script><script src="/${assets}/main.js"></script>`
     );
 
     res.send(html);
