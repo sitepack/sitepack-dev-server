@@ -16,6 +16,9 @@ var assets = 'assets';
 var port = 8080;
 var app = express();
 
+config.entry.main.unshift('webpack-dev-server/client?http://localhost:8081');
+config.output.publicPath = 'http://localhost:8081/assets/';
+
 app.use(`/${assets}`, proxy(url.parse('http://localhost:8081/assets')));
 app.use(express.static(path.join(process.cwd(), 'public')));
 
