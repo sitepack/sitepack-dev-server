@@ -20,8 +20,6 @@ app.use(express.static(path.join(process.cwd(), 'public')));
 
 app.get('/*', function response(req, res, next) {
   if (req.accepts('html') && req.originalUrl !== '/favicon.ico') {
-    var title;
-
     var content = '';
     var cssHrefs = [];
     var scriptSrcs = [
@@ -50,5 +48,8 @@ var webpackDevServer = new WebpackDevServer(webpack(config), {
     stats: { colors: true }
 });
 
-webpackDevServer.listen(8081, "localhost", function() {});
-app.listen(port);
+webpackDevServer.listen(8081, function() {
+  app.listen(port, function() {
+    console.log(`Listening on port ${port}`);
+  });
+});
