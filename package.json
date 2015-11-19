@@ -1,6 +1,6 @@
 {
   "name": "@sitepack/dev-server",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Development server for sitepack apps.",
   "main": "index.js",
   "scripts": {

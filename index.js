@@ -32,9 +32,18 @@ app.get('/*', function response(req, res, next) {
       }
     });
 
+    var content = '';
+    var cssHrefs = [];
+    var scriptSrcs = [
+      `/${assets}/layout.js`,
+      `/${assets}/main.js`
+    ];
+
     var html = renderHtml(
       title,
-      `<script src="/${assets}/layout.js"></script><script src="/${assets}/main.js"></script>`
+      content,
+      cssHrefs,
+      scriptSrcs
     );
 
     res.send(html);
