@@ -23,7 +23,6 @@ app.get('/*', function response(req, res, next) {
     var content = '';
     var cssHrefs = [];
     var scriptSrcs = [
-      `/${assets}/layout.js`,
       `/${assets}/main.js`
     ];
 
