@@ -9,7 +9,7 @@ var config = require(path.join(process.cwd(), 'webpack', 'config.dev.js'));
 var renderHtml = require(path.join(process.cwd(), 'base', 'html.js'));
 
 var assets = 'assets';
-var port = 8080;
+var port = process.env.PORT || 8080;
 var app = express();
 
 config.entry.main.unshift('webpack-dev-server/client?http://localhost:8081');
